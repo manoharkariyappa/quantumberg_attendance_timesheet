@@ -4,6 +4,7 @@ app_publisher = "Quantumberg"
 app_description = "Overtime and Attendance Timesheet tracking"
 app_email = "admin@quantumberg.com"
 app_license = "mit"
+required_apps = ["frappe/erpnext"]
 
 # Apps
 # ------------------
@@ -82,6 +83,9 @@ app_license = "mit"
 # Installation
 # ------------
 
+# include js in doctype views
+doctype_js = {
+ "Payroll Entry" : "public/js/payroll_entry.js",}
 # before_install = "quantumberg_attendance_timesheet.install.before_install"
 # after_install = "quantumberg_attendance_timesheet.install.after_install"
 
