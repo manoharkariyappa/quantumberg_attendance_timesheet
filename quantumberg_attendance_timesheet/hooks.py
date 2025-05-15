@@ -85,7 +85,8 @@ required_apps = ["frappe/erpnext"]
 
 # include js in doctype views
 doctype_js = {
- "Payroll Entry" : "public/js/payroll_entry.js",}
+	"Payroll Entry": "public/js/payroll_entry.js",
+}
 # before_install = "quantumberg_attendance_timesheet.install.before_install"
 # after_install = "quantumberg_attendance_timesheet.install.after_install"
 
@@ -245,4 +246,3 @@ doctype_js = {
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
