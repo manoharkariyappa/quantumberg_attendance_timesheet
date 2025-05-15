@@ -81,12 +81,20 @@ def execute():
 				"insert_after": "worked_hours_summary_section",
 			},
 			{
+				"fieldname": "monthly_working_hours",
+				"fieldtype": "Float",
+				"label": "Monthly Working Hours",
+				"translatable": 1,
+				"read_only": 1,
+				"insert_after": "regular_hours_summary_section",
+			},
+			{
 				"fieldname": "overtime_hours",
 				"fieldtype": "Float",
 				"label": "Overtime Hours",
 				"translatable": 1,
 				"read_only": 1,
-				"insert_after": "regular_working_hours",
+				"insert_after": "monthly_working_hours",
 			},
 			{
 				"fieldname": "holiday_hours",
