@@ -10,7 +10,6 @@ def add_monthly_working_hours(payroll_entry):
     for entry in salary_slips:
         salary_slip = frappe.get_doc("Salary Slip", entry.get("name"))
 
-        # Fetch payment_days and calculate monthly_working_hours
         payment_days = salary_slip.payment_days or 0
         monthly_hours = float(payment_days) * 8
 

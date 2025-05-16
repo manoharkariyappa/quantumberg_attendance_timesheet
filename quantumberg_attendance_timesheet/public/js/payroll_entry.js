@@ -14,3 +14,12 @@ function fetch_attendance_data(frm) {
 		},
 	});
 }
+
+function fetch_attendance_data(frm) {
+	frappe.call({
+		method: "quantumberg_attendance_timesheet.controllers.add_attendance_to_salary_slip.add_monthly_working_hours",
+		args: {
+			payroll_entry: frm.doc.name,
+		},
+	});
+}

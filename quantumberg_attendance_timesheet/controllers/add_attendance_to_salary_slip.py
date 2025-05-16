@@ -7,8 +7,12 @@ from ..controllers.get_employee_attendance import (
 
 SETTINGS_DOCTYPE = "Quantumberg Custom Payroll Settings"
 
+# maximum_monthly_hours = frappe.db.get_single_value(
+#     SETTINGS_DOCTYPE, "maximum_monthly_hours"
+# )
+
 maximum_monthly_hours = frappe.db.get_single_value(
-    SETTINGS_DOCTYPE, "maximum_monthly_hours"
+    "Salary Slip", "monthly_working_hours"
 )
 overtime_15 = frappe.db.get_single_value(SETTINGS_DOCTYPE, "overtime_15_activity")
 overtime_20 = frappe.db.get_single_value(SETTINGS_DOCTYPE, "overtime_20_activity")
